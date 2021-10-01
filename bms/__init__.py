@@ -18,6 +18,7 @@ def create_app(test_config=None):
 def register_extensions(app):
     db.init_app(app)
     rest_api.init_app(app)
+    import bms.routes 
 
 
-import bms.routes  # set url routes
+ # set url routes
